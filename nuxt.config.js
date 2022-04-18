@@ -82,5 +82,8 @@ export default {
       // specific font weights
       Lato: [100, 300],
     }
-  }
+  },
+  server: {
+    port: process.env.PORT || 4002,
+}
 }
