@@ -89,6 +89,16 @@ export default {
 publicRuntimeConfig: {
   baseURL: process.env.BASE_URL || 'https://onecompassionate.herokuapp.com/'
 },
+axios: {
+  baseURL: 'https://onecompassionate.herokuapp.com/',
+  proxy: true,
+  debug: false,
+  // headers : {
+  //   common: {
+  //     'Authorization' : 'Bearer 8cce75e7a96a81f598eb612d6f768eb56297d8a54283e07b2d3839ec52f8af7621754cd761f48ccadd30320a40ac80f8576375a597aca30c147ccb4725d96aca76997a5fdc53bf7939f2c5f07b1d6397988e549d085e55844e0da5841f03b53b8d398000df92121d5b70184cfec8901dd638aecc059a6b7e27399b3826f7ac59'
+  //   }
+  // }
+}
 
 
 }
