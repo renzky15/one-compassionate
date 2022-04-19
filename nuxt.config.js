@@ -85,5 +85,12 @@ export default {
   },
   server: {
     port: process.env.PORT || 4002,
-}
+},
+publicRuntimeConfig: {
+  baseURL: process.env.BASE_URL || 'https://onecompassionate.herokuapp.com/'
+},
+env: {
+  baseURL: process.env.BASE_URL
+},
+dev: process.env.NODE_ENV !== 'production'
 }
