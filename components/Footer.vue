@@ -112,8 +112,9 @@ export default {
 }
 .footer-text {
   color: #9a9a9a;
-  font-size: 14px;
+
   font-weight: 600;
+  @apply mobile:text-xs laptop:text-sm;
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   #scout-footer {

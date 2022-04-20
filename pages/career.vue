@@ -116,6 +116,6 @@ export default {
   height: 30rem;
 }
 .p-snippet {
-  @apply text-gray-500 text-2xl leading-relaxed mt-3 text-justify mobile:leading-snug laptop:leading-relaxed;
+  @apply text-gray-500 text-2xl leading-relaxed mt-3 text-justify mobile:leading-snug mobile:text-xl laptop:leading-relaxed laptop:text-2xl;
 }
 </style>
