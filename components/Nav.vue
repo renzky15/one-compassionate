@@ -10,12 +10,15 @@
       </div>
 
       <div class="links">
-        <div class="relative group">
-          <NuxtLink class="group-hover:block" to="/">Home</NuxtLink>
+        <NuxtLink class="" to="/">Home</NuxtLink>
+        <div class="group relative">
+          <NuxtLink to="/about">About</NuxtLink>
+
           <div
             class="
               z-40
-              w-28
+              hidden
+              w-40
               bg-white
               rounded
               divide-y divide-gray-100
@@ -23,7 +26,6 @@
               dark:bg-gray-700
               group-hover:block
               absolute
-              hidden
             "
           >
             <ul
@@ -31,8 +33,8 @@
               aria-labelledby="dropdownDefault"
             >
               <li>
-                <a
-                  href="#"
+                <NuxtLink
+                  to="/about"
                   class="
                     block
                     py-2
@@ -40,12 +42,12 @@
                     hover:bg-gray-100
                     dark:hover:bg-gray-600 dark:hover:text-white
                   "
-                  >Dashboard</a
+                  >Mission and Vision</NuxtLink
                 >
               </li>
               <li>
-                <a
-                  href="#"
+                <NuxtLink
+                  to="/about"
                   class="
                     block
                     py-2
@@ -53,12 +55,12 @@
                     hover:bg-gray-100
                     dark:hover:bg-gray-600 dark:hover:text-white
                   "
-                  >Settings</a
+                  >How We Started</NuxtLink
                 >
               </li>
               <li>
-                <a
-                  href="#"
+                <NuxtLink
+                  to="/about"
                   class="
                     block
                     py-2
@@ -66,31 +68,111 @@
                     hover:bg-gray-100
                     dark:hover:bg-gray-600 dark:hover:text-white
                   "
-                  >Earnings</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="
-                    block
-                    py-2
-                    px-4
-                    hover:bg-gray-100
-                    dark:hover:bg-gray-600 dark:hover:text-white
-                  "
-                  >Sign out</a
+                  >Our Core Values</NuxtLink
                 >
               </li>
             </ul>
           </div>
         </div>
-        <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/services">Services</NuxtLink>
         <NuxtLink to="/career">Careers</NuxtLink>
-        <NuxtLink to="/faq">Resources</NuxtLink>
+        <div class="group">
+          <NuxtLink class="" to="/faq">Resources</NuxtLink>
+          <div
+            class="
+              hidden
+              w-40
+              bg-white
+              rounded
+              divide-y divide-gray-100
+              shadow
+              dark:bg-gray-700
+              group-hover:block
+              absolute
+            "
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <NuxtLink
+                  to="/faq"
+                  class="
+                    block
+                    py-2
+                    px-4
+                    hover:bg-gray-100
+                    dark:hover:bg-gray-600 dark:hover:text-white
+                  "
+                  >FAQs</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/faq"
+                  class="
+                    block
+                    py-2
+                    px-4
+                    hover:bg-gray-100
+                    dark:hover:bg-gray-600 dark:hover:text-white
+                  "
+                  >COVID-19 Care</NuxtLink
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
         <NuxtLink to="/testimonial">Testimonials</NuxtLink>
-        <NuxtLink to="/contact">Contact Us</NuxtLink>
+        <div class="group">
+          <NuxtLink class="" to="/contact">Contact Us</NuxtLink>
+          <div
+            class="
+              hidden
+              w-40
+              bg-white
+              rounded
+              divide-y divide-gray-100
+              shadow
+              dark:bg-gray-700
+              group-hover:block
+              absolute
+            "
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <NuxtLink
+                  to="/contact"
+                  class="
+                    block
+                    py-2
+                    px-4
+                    hover:bg-gray-100
+                    dark:hover:bg-gray-600 dark:hover:text-white
+                  "
+                  >Request Information</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  to="/contact"
+                  class="
+                    block
+                    py-2
+                    px-4
+                    hover:bg-gray-100
+                    dark:hover:bg-gray-600 dark:hover:text-white
+                  "
+                  >General Information</NuxtLink
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

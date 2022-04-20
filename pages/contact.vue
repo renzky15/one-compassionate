@@ -61,18 +61,24 @@
             type="email"
           />
           <select class="input-text" v-model="lookingFor" name="" id="">
-            <option default value="">Round the clock care</option>
-            <option value="">Hourly Care</option>
-            <option value="">Long Term Care</option>
-            <option value="">Short Term Care</option>
+            <option selected disabled value="">Looking For?</option>
+            <option default value="Round the clock care">
+              Round the clock care
+            </option>
+            <option value="Hourly Care">Hourly Care</option>
+            <option value="Long Term Care">Long Term Care</option>
+            <option value="Short Term Care">Short Term Care</option>
           </select>
           <select class="input-text" v-model="careType" name="" id="">
-            <option default value="">24hr live in</option>
-            <option value="">Hospital to homecare</option>
-            <option value="">Companionship</option>
-            <option value="">Advanced Care</option>
-            <option value="">Post-Surgery Care</option>
-            <option value="">Alzheimer's Disease/Dementia Care</option>
+            <option selected disabled value="">Type of Service</option>
+            <option default value="24hr">24hr live in</option>
+            <option value="Hospital-to-homecare">Hospital to homecare</option>
+            <option value="Companionship">Companionship</option>
+            <option value="Advanced Care">Advanced Care</option>
+            <option value="Post-Surgery Care">Post-Surgery Care</option>
+            <option value="Alzheimer's Disease/Dementia Care">
+              Alzheimer's Disease/Dementia Care
+            </option>
           </select>
           <input
             v-model="contactPerson"
@@ -81,9 +87,10 @@
             type="text"
           />
           <select class="input-text" v-model="caregiver" name="" id="">
-            <option default value="">Male</option>
-            <option value="">Female</option>
-            <option value="">Either</option>
+            <option selected disabled value="">Preferred Caregiver</option>
+            <option default value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Either">Either</option>
           </select>
           <input
             v-model="neededCare"
@@ -178,12 +185,47 @@ export default {
     });
   },
   methods: {
+    clear() {
+      this.clientName = "";
+      this.patientName = "";
+      this.patientAddress = "";
+      this.phoneNum = "";
+      this.dob = "";
+      this.email = "";
+      this.lookingFor = "";
+      this.careType = "";
+      this.contactPerson = "";
+      this.caregiver = "";
+      this.neededCare = "";
+      this.bestToContact = "";
+      this.message = "";
+    },
     send() {
-      this.$mail.send({
-        from: this.email,
-        subject: "Contact form message",
-        text: this.message,
-      });
+      this.$mail
+        .send({
+          from: this.email,
+          subject: "One compassionate",
+          text: `
+         Who needs care : ${this.clientName}
+         Client Name : ${this.patientName}
+         Address : ${this.patientAddress} 
+         Phone Number : ${this.phoneNum}
+         Date of Birth : ${this.dob}
+         Email : ${this.email}
+         Looking for : ${this.lookingFor}
+         Type of Care : ${this.careType} 
+         Contact Person : ${this.contactPerson}
+         Preferred Caregiver : ${this.caregiver}
+         When is care needed : ${this.neededCare}
+         Best way to contact : ${this.bestToContact}
+         Message : ${this.message}
+        `,
+        })
+        .then((e) => {
+          window.alert("Assessment Form submitted.");
+        });
+
+      this.clear();
     },
   },
 };

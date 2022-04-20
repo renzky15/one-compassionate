@@ -185,6 +185,27 @@
           </ol>
         </div>
       </div>
+      <div class="covid-box">
+        <div class="flex flex-col">
+          <h3 class="text-2xl font-bold text-gray-500">COVID-19 CARE</h3>
+          <p class="w-3/4 text-xl mt-3 text-gray-500">
+            Safety is our #1 priority! You don’t need to worry because we
+            administer rapid tests and weekly PCR swab tests at our office which
+            is located at 5617 Dempster St. Morton Grove, Illinois. We will stay
+            up to date with the changing COVID-19 guidelines to ensure that all
+            our employees follow the protocols we have in place so that we can
+            continue to promote a healthy work environment.
+          </p>
+        </div>
+        <div class="w-3/6 h-40">
+          <img
+            class=""
+            src="@/assets/img/covid-care-home.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
     </div>
     <Footer />
   </div>
@@ -252,5 +273,8 @@ export default {
 }
 .content {
   @apply w-full mx-auto  container;
+}
+.covid-box {
+  @apply w-full h-full my-10 flex rounded-xl bg-white shadow-md px-10 py-10 justify-between;
 }
 </style>

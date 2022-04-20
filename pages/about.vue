@@ -237,6 +237,7 @@ export default {
   @apply w-full mx-auto  container my-10;
 }
 .img-wrapper {
+  height: 560px;
 }
 .slide {
   @apply w-full h-full mobile:h-80 laptop:h-full;
