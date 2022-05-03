@@ -282,14 +282,20 @@
       <div class="banner-form">
         <div class="flex items-center">
           <ion-icon
-            class="h-14 w-14 mr-1 stroke-current text-secondary"
+            class="
+              laptop:h-14 laptop:w-14
+              mobile:h-20 mobile:w-20
+              mr-1
+              stroke-current
+              text-secondary
+            "
             name="call-outline"
           ></ion-icon>
           <div class="flex flex-col">
             <label class="text-2xl text-secondary" for=""
               >Receive compassionate care beyond measure</label
             >
-            <h3 class="text-3xl text-secondary">Call 847-9897701</h3>
+            <h3 class="text-3xl text-secondary">Call 847-989-7701</h3>
           </div>
         </div>
         <div class="flex items-center">
@@ -459,7 +465,7 @@
             </div>
           </div>
         </div>
-        <div class="relative shadow-lg col-span-3">
+        <div class="relative shadow-lg mobile:col-span-1 laptop:col-span-3">
           <div class="bg-custom-4"></div>
           <div
             class="
@@ -616,7 +622,7 @@ export default {
   @apply w-full h-full my-10 flex rounded-xl bg-white shadow-md px-10 py-10 justify-between;
 }
 .banner-form {
-  @apply bg-light-blue rounded-xl w-full py-10 my-10 px-20 flex justify-between items-center mobile:flex-col laptop:flex-row mobile:px-10 laptop:px-20;
+  @apply bg-light-blue rounded-xl w-full py-10 my-10 px-20 flex justify-between items-center mobile:flex-col laptop:flex-row mobile:px-5 laptop:px-20;
 }
 .services {
   @apply my-10;

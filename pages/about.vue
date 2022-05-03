@@ -35,6 +35,8 @@
           p-10
           mobile:mt-0
           laptop:mt-10
+          mobile:p-5
+          laptop:p-10
         "
       >
         <h1 class="text-white text-3xl text-center">Mission and Vision</h1>
@@ -63,6 +65,8 @@
           rounded-lg
           shadow-md
           p-10
+          mobile:p-5
+          laptop:p-10
         "
       >
         <h1 class="text-white text-3xl text-center">How We Started</h1>
@@ -103,6 +107,8 @@
           rounded-lg
           mt-10
           p-10
+          mobile:p-5
+          laptop:p-10
         "
       >
         <h1 class="text-white text-3xl text-center">Our Core Values</h1>
