@@ -50,7 +50,7 @@
           <label class="text-xl mobile:text-lg laptop:text-xl" for="">{{
             question.text
           }}</label>
-          <div
+          <!-- <div
             class="
               rounded-full
               h-6
@@ -65,7 +65,7 @@
               class="stroke-current text-blue-500 z-10"
               name="chevron-down-outline"
             ></ion-icon>
-          </div>
+          </div> -->
         </div>
 
         <div
@@ -117,7 +117,7 @@
         <label class="text-xl text-gray-500" for=""
           >How are your home care workers screened?</label
         >
-        <div
+        <!-- <div
           class="
             rounded-full
             h-6
@@ -132,7 +132,7 @@
             class="stroke-current text-blue-500"
             name="chevron-down-outline"
           ></ion-icon>
-        </div>
+        </div> -->
       </div>
 
       <div
@@ -188,7 +188,17 @@
       <div class="covid-box">
         <div class="flex flex-col">
           <h3 class="text-2xl font-bold text-gray-500">COVID-19 CARE</h3>
-          <p class="w-3/4 text-xl mt-3 text-gray-500">
+          <p
+            class="
+              w-3/4
+              text-xl
+              mt-3
+              text-gray-500
+              mobile:w-full
+              laptop:w-3/4
+              text-justify
+            "
+          >
             Safety is our #1 priority! You don’t need to worry because we
             administer rapid tests and weekly PCR swab tests at our office which
             is located at 5617 Dempster St. Morton Grove, Illinois. We will stay
@@ -197,14 +207,14 @@
             continue to promote a healthy work environment.
           </p>
         </div>
-        <div class="w-3/6 h-40">
+        <!-- <div class="w-3/6 h-40">
           <img
             class=""
             src="@/assets/img/covid-care-home.png"
             alt=""
             srcset=""
           />
-        </div>
+        </div> -->
       </div>
     </div>
     <Footer />
@@ -275,6 +285,6 @@ export default {
   @apply w-full mx-auto  container;
 }
 .covid-box {
-  @apply w-full h-full my-10 flex rounded-xl bg-white shadow-md px-10 py-10 justify-between;
+  @apply w-full h-full my-10 flex rounded-xl bg-white shadow-md px-10 py-10 justify-between mobile:flex-col laptop:flex-row;
 }
 </style>

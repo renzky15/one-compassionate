@@ -149,6 +149,6 @@ export default {
   background-image: url("@/assets/img/diversity.jpg");
   @apply bg-cover bg-center rounded;
   height: 300px;
-  filter: grayscale(50%);
+  filter: grayscale(50%) brightness(60%);
 }
 </style>
