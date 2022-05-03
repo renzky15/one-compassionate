@@ -459,7 +459,7 @@
             </div>
           </div>
         </div>
-        <div class="relative shadow-lg">
+        <div class="relative shadow-lg col-span-3">
           <div class="bg-custom-4"></div>
           <div
             class="
