@@ -96,7 +96,10 @@
             v-model="neededCare"
             class="input-text"
             placeholder="When is care needed?"
+            name="date"
             type="text"
+            onfocus="(this.type='date')"
+            onfocusout="(this.type='text')"
           />
           <input
             v-model="bestToContact"

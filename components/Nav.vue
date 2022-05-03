@@ -193,7 +193,7 @@ export default {
   @apply flex items-center justify-between container mx-auto py-3 sticky;
 }
 .links {
-  @apply flex space-x-6 items-center  text-xl w-3/6 text-gray-500 font-bold;
+  @apply flex space-x-6 items-center justify-end  text-xl w-4/6 text-gray-500 font-bold;
 }
 .logo-img {
   @apply w-full h-full;

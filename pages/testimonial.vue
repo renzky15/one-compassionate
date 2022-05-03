@@ -22,8 +22,17 @@
             p-10
             mobile:w-full mobile:p-5
             laptop:w-10/12 laptop:p-10
+            relative
           "
         >
+          <div class="quote-left absolute">
+            <img
+              class="h-10 w-10"
+              src="@/assets/img/quote2.png"
+              alt=""
+              srcset=""
+            />
+          </div>
           <slick :options="slickOptions">
             <div v-for="(testimonial, index) in testimonials" :key="index">
               <div
@@ -52,14 +61,20 @@
                   {{ testimonial.feedback }}
                 </h2>
                 <img
-                  class="rounded-full h-40 w-40"
-                  src="@/assets/img/nurse6.jpeg"
+                  class="rounded-full h-60 w-60"
+                  src="@/assets/img/testimonial_img.jpg"
                 />
-
-                <label class="text-2xl text-gray-500" for="">John Doe</label>
               </div>
             </div>
           </slick>
+          <div class="quote-right absolute right-10 bottom-10">
+            <img
+              class="h-10 w-10"
+              src="@/assets/img/quote.png"
+              alt=""
+              srcset=""
+            />
+          </div>
         </div>
       </div>
       <div class="banner-form">

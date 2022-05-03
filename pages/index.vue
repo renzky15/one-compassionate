@@ -111,7 +111,10 @@
               v-model="neededCare"
               class="input-text"
               placeholder="When is care needed?"
+              name="date"
               type="text"
+              onfocus="(this.type='date')"
+              onfocusout="(this.type='text')"
             />
             <input
               v-model="bestToContact"
@@ -154,7 +157,7 @@
           font-bold
           text-3xl
           mobile:text-xl mobile:text-justify
-          laptop:text-3xl laptop:text-center
+          laptop:text-5xl laptop:text-center
         "
       >
         If you or anyone you know or love is at the stage where assistance at
@@ -170,11 +173,11 @@
           class="
             text-center text-gray-500
             italic
-            text-3xl
+            text-4xl
             my-5
             mr-3
             mobile:text-2xl
-            laptop:text-3xl
+            laptop:text-5xl
           "
         >
           We guarantee you that
@@ -186,33 +189,71 @@
             font-bold
             text-3xl
             mobile:text-2xl
-            laptop:text-3xl
+            laptop:text-5xl
           "
         >
           our name is our promise.
         </h2>
       </div>
 
-      <div
+      <!-- <div
         class="
-          flex
+          grid
           items-center
-          justify-center
-          mobile:flex-col
-          laptop:flex-row
+          mobile:grid-col-2
+          laptop:grid-col-2
           mobile:space-y-4
           laptop:space-y-0
           mobile:mt-3
           laptop:mt-0
         "
       >
-        <span class="italic text-center text-gray-500 text-4xl">
+        <span
+          class="
+            italic
+            text-center text-gray-500
+            w-full
+            mobile:text-4xl
+            laptop:text-5xl
+            col-span-1
+          "
+        >
           Call us today at
         </span>
-        <h2 class="font-bold text-secondary text-4xl mx-3">847-989-7701</h2>
-        <span class="text-3xl text-gray-500 mobile:text-center">
+        <h2
+          class="
+            font-bold
+            text-secondary text-4xl
+            mx-3
+            mobile:text-4xl
+            laptop:text-5xl
+            w-full
+    
+          "
+        >
+          847-989-7701
+        </h2>
+        <span
+          class="
+            text-3xl text-gray-500
+            mobile:text-center mobile:text-3xl
+            laptop:text-4xl
+            w-full
+          "
+        >
           and talk to one of our care coordinators for a free assessment!</span
         >
+      </div> -->
+      <div
+        class="
+          mobile:text-3xl mobile:my-3
+          laptop:text-5xl laptop:my-0
+          text-center text-gray-500
+        "
+      >
+        Call us today at
+        <span class="text-secondary">847-989-7701</span> and talk to one of our
+        care coordinators for a free assessment!
       </div>
     </div>
     <div class="content">
@@ -239,11 +280,17 @@
       </div> -->
 
       <div class="banner-form">
-        <div class="flex flex-col">
-          <label class="text-2xl text-secondary" for=""
-            >Receive compassionate care beyond measure</label
-          >
-          <h3 class="text-3xl text-secondary">Call 847-9897701</h3>
+        <div class="flex items-center">
+          <ion-icon
+            class="h-14 w-14 mr-1 stroke-current text-secondary"
+            name="call-outline"
+          ></ion-icon>
+          <div class="flex flex-col">
+            <label class="text-2xl text-secondary" for=""
+              >Receive compassionate care beyond measure</label
+            >
+            <h3 class="text-3xl text-secondary">Call 847-9897701</h3>
+          </div>
         </div>
         <div class="flex items-center">
           <button
@@ -277,6 +324,182 @@
           >
             Learn More
           </button>
+        </div>
+      </div>
+
+      <div
+        class="
+          grid
+          gap-5
+          my-10
+          mobile:grid-cols-1 mobile:grid-rows-3
+          laptop:grid-cols-3 laptop:grid-rows-1
+        "
+      >
+        <div class="relative shadow-lg">
+          <div class="bg-custom-1"></div>
+          <div
+            class="
+              absolute
+              inset-0
+              h-full
+              w-full
+              flex flex-col
+              space-y-3
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                rounded-full
+                p-4
+                flex
+                items-center
+                justify-center
+                bg-secondary
+              "
+            >
+              <ion-icon
+                class="stroke-current stroke-1 text-white h-10 w-10"
+                name="briefcase-outline"
+              ></ion-icon>
+            </div>
+            <div class="bg-secondary px-5">
+              <h1 class="text-3xl text-white font-bold">LABOR</h1>
+            </div>
+            <div class="flex flex-col text-center bg-secondary px-5">
+              <label class="text-white text-2xl font-bold"
+                >Licensed by the State of Illinois</label
+              >
+              <label class="text-white text-2xl font-extrabold"
+                >Department of Labor</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="relative shadow-lg">
+          <div class="bg-custom-2"></div>
+          <div
+            class="
+              absolute
+              inset-0
+              h-full
+              w-full
+              flex flex-col
+              space-y-3
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                rounded-full
+                p-4
+                flex
+                items-center
+                justify-center
+                bg-secondary
+              "
+            >
+              <ion-icon
+                class="stroke-current stroke-1 text-white h-10 w-10"
+                name="rocket-outline"
+              ></ion-icon>
+            </div>
+            <div class="bg-secondary px-5">
+              <h1 class="text-3xl text-white font-bold">INSURANCE</h1>
+            </div>
+            <div class="flex flex-col text-center bg-secondary px-5">
+              <label class="text-white text-2xl font-bold"
+                >We have a great liability insurance.</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="relative shadow-lg">
+          <div class="bg-custom-3"></div>
+          <div
+            class="
+              absolute
+              inset-0
+              h-full
+              w-full
+              flex flex-col
+              space-y-3
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                rounded-full
+                p-4
+                flex
+                items-center
+                justify-center
+                bg-secondary
+              "
+            >
+              <ion-icon
+                class="stroke-current stroke-1 text-white h-10 w-10"
+                name="fitness-outline"
+              ></ion-icon>
+            </div>
+            <div class="bg-secondary px-5">
+              <h1 class="text-3xl text-white font-bold">HEALTH</h1>
+            </div>
+            <div class="flex flex-col text-center bg-secondary px-5">
+              <label class="text-white text-2xl font-bold"
+                >Licensed by the State of Illinois</label
+              >
+              <label class="text-white text-2xl font-extrabold"
+                >Department of Public Health</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="relative shadow-lg">
+          <div class="bg-custom-4"></div>
+          <div
+            class="
+              absolute
+              inset-0
+              h-full
+              w-full
+              flex flex-col
+              space-y-3
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                rounded-full
+                p-4
+                flex
+                items-center
+                justify-center
+                bg-secondary
+              "
+            >
+              <ion-icon
+                class="stroke-current stroke-1 text-white h-10 w-10"
+                name="shield-checkmark-outline"
+              ></ion-icon>
+            </div>
+            <div class="bg-secondary px-5">
+              <h1 class="text-3xl text-white font-bold">PROTECTION</h1>
+            </div>
+            <div class="flex flex-col text-center bg-secondary px-5">
+              <label class="text-white text-2xl font-bold"
+                >One Compassionate Homecare Inc. is</label
+              >
+              <label class="text-white text-2xl font-extrabold"
+                >Fully Bounded</label
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -412,5 +635,29 @@ input[type="date"]:valid {
 }
 .text-custom {
   color: #a06f55;
+}
+.bg-custom-1 {
+  background-image: url("@/assets/img/labor.jpg");
+  @apply bg-cover bg-center rounded;
+  height: 300px;
+  filter: grayscale(100%);
+}
+.bg-custom-2 {
+  background-image: url("@/assets/img/insurance.jpg");
+  @apply bg-cover bg-center rounded;
+  height: 300px;
+  filter: grayscale(100%);
+}
+.bg-custom-3 {
+  background-image: url("@/assets/img/health.jpg");
+  @apply bg-cover bg-center rounded;
+  height: 300px;
+  filter: grayscale(100%);
+}
+.bg-custom-4 {
+  background-image: url("@/assets/img/protection.jpg");
+  @apply bg-cover bg-center rounded;
+  height: 300px;
+  filter: grayscale(100%);
 }
 </style>

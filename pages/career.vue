@@ -24,7 +24,7 @@
           Our Team of Home Care Workers
         </h1>
 
-        <p class="p-snippet">
+        <p class="p-snippet-2">
           We are proud and honored to be working with individuals who are
           trustworthy, hardworking and genuinely compassionate. Our home care
           workers undergo a comprehensive screening process including a national
@@ -33,7 +33,7 @@
           with Alzheimer's Disease/Dementia, as well as other medical conditions
           including those who are receiving hospice care.
         </p>
-        <p class="p-snippet">
+        <p class="p-snippet-2">
           We strive to achieve an excellent match between clients and staff
           members in order to maintain an honest and productive relationship
           with our clients and their families. We are also sensitive to the fact
@@ -63,19 +63,41 @@
           </ul>
         </div>
 
-        <div class="border border-secondary rounded-lg p-5">
-          <h1 class="text-2xl text-gray-500">Join Our Team</h1>
-          <p class="p-snippet">
-            One Compassionate Home Care, Inc. is an equal opportunity employer.
-            We evaluate qualified applicants regardless of race, color,
-            religion, sex, national origin, disability, and veteran status.
-          </p>
+        <div class="relative shadow-lg">
+          <div class="bg-diversity"></div>
+          <div
+            class="
+              absolute
+              inset-0
+              h-full
+              w-full
+              flex flex-col
+              space-y-3
+              justify-center
+              items-start
+              p-5
+            "
+          >
+            <h1 class="text-2xl text-white">Join Our Team</h1>
+            <p class="p-snippet">
+              One Compassionate Home Care, Inc. is an equal opportunity
+              employer. We evaluate qualified applicants regardless of race,
+              color, religion, sex, national origin, disability, and veteran
+              status.
+            </p>
 
-          <span
-            class="p-snippet flex items-center mobile:flex-col laptop:flex-row"
-            >Email us your resume today at
-            <h2 class="text-secondary ml-2">info@onecompassionate.com</h2>
-          </span>
+            <span
+              class="
+                p-snippet
+                flex
+                items-center
+                mobile:flex-col
+                laptop:flex-row
+              "
+              >Email us your resume today at
+              <h2 class="text-secondary ml-2">info@onecompassionate.com</h2>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -111,11 +133,22 @@ export default {
   @apply w-full mx-auto  container;
 }
 .bg-custom {
-  @apply bg-cover bg-center w-full;
-  background-image: url("@/assets/img/team.jpg");
-  height: 30rem;
+  @apply bg-cover bg-center;
+  background-image: url("@/assets/img/careers_1.jpg");
+  height: 600px;
+  background-position: center;
 }
 .p-snippet {
+  @apply text-white text-2xl leading-relaxed mt-3 text-justify mobile:leading-snug mobile:text-xl laptop:leading-relaxed laptop:text-2xl;
+}
+.p-snippet-2 {
   @apply text-gray-500 text-2xl leading-relaxed mt-3 text-justify mobile:leading-snug mobile:text-xl laptop:leading-relaxed laptop:text-2xl;
+}
+
+.bg-diversity {
+  background-image: url("@/assets/img/diversity.jpg");
+  @apply bg-cover bg-center rounded;
+  height: 300px;
+  filter: grayscale(50%);
 }
 </style>

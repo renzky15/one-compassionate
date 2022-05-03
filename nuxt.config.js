@@ -75,7 +75,7 @@ export default {
     families: {
       // a simple name
       Roboto: true,
-  
+    Anton:true,
       // a name with spaces
       'Josefin+Sans': true,
   
