@@ -31,7 +31,7 @@
                 </li>
                 <li>Errand Services</li>
                 <li>Personal Laundry</li>
-                <li>Light House Keeping</li>
+                <li>Light Housekeeping</li>
                 <li>Meal Preparation</li>
                 <li>Medication or Appointment Reminders</li>
                 <li>Transportation</li>
@@ -133,36 +133,36 @@ export default {
   background-image: url("@/assets/img/protection.jpg");
   @apply bg-cover bg-center rounded absolute h-full inset-0;
 
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(60%) blur(2px);
 }
 .bg-service-2 {
   background-image: url("@/assets/img/health.jpg");
   @apply bg-cover bg-center rounded absolute h-full inset-0;
 
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(60%) blur(2px);
 }
 .bg-service-3 {
   background-image: url("@/assets/img/labor.jpg");
   @apply bg-cover bg-center rounded absolute h-full inset-0;
 
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(60%) blur(2px);
 }
 .bg-service-4 {
   background-image: url("@/assets/img/insurance.jpg");
   @apply bg-cover bg-center rounded absolute h-full inset-0;
 
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(60%) blur(2px);
 }
 .bg-service-5 {
   background-image: url("@/assets/img/nurse6.jpg");
   @apply bg-cover bg-center rounded absolute h-full inset-0;
 
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(60%) blur(2px);
 }
 .bg-service-6 {
   background-image: url("@/assets/img/testimonial_img.jpg");
   @apply bg-cover bg-center rounded absolute h-full inset-0;
 
-  filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(60%) blur(2px);
 }
 </style>

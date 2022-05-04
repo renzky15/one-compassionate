@@ -1,6 +1,6 @@
 <template>
   <div class="z-10">
-    <div class="nav">
+    <div class="nav z-10">
       <div class="nav-container">
         <div class="left-menu">
           <NuxtLink to="/">

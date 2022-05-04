@@ -2,8 +2,8 @@
   <div class="page-bg">
     <NavMobile v-if="isMobile < 641" />
     <Nav v-else />
-    <div class="header-banner">
-      <div class="header-banner-container">
+    <div class="header-banner relative">
+      <div class="header-banner-container z-10">
         <div class="flex flex-col justify-start items-start my-10">
           <h2 class="banner-text" for="">
             Let our family
@@ -48,7 +48,7 @@
             <input
               v-model="patientName"
               class="input-text"
-              placeholder="Clients Name"
+              placeholder="Client's Name"
               type="text"
             />
             <input
@@ -149,6 +149,7 @@
           </button>
         </div>
       </div>
+      <div class="bg-custom absolute inset-0"></div>
     </div>
     <div class="container mx-auto my-20 mobile:px-2 laptop:px-0">
       <h2
@@ -157,7 +158,7 @@
           font-bold
           text-3xl
           mobile:text-xl mobile:text-justify
-          laptop:text-5xl laptop:text-center
+          laptop:text-4xl laptop:text-center
         "
       >
         If you or anyone you know or love is at the stage where assistance at
@@ -177,7 +178,7 @@
             my-5
             mr-3
             mobile:text-2xl
-            laptop:text-5xl
+            laptop:text-4xl
           "
         >
           We guarantee you that
@@ -189,7 +190,7 @@
             font-bold
             text-3xl
             mobile:text-2xl
-            laptop:text-5xl
+            laptop:text-4xl
           "
         >
           our name is our promise.
@@ -247,7 +248,7 @@
       <div
         class="
           mobile:text-3xl mobile:my-3
-          laptop:text-5xl laptop:my-0
+          laptop:text-4xl laptop:my-0
           text-center text-gray-500
         "
       >
@@ -597,23 +598,24 @@ export default {
   @apply h-full overflow-hidden;
 }
 .header-banner {
-  @apply flex justify-between items-start w-full bg-custom py-10;
+  @apply flex justify-between items-start w-full py-10;
 }
 .header-banner-container {
-  @apply flex container mx-auto justify-between mobile:px-4 laptop:px-0;
+  @apply flex container mx-auto justify-between mobile:px-4 laptop:px-3;
 }
 .banner-text {
   @apply text-custom font-bold text-5xl w-full mobile:text-3xl laptop:text-5xl;
 }
 .banner-snippet {
-  @apply w-3/6 mt-3 text-gray-700 text-2xl mobile:text-xl mobile:w-full laptop:w-3/6;
+  @apply w-3/6 mt-3 text-gray-700 text-justify text-2xl mobile:text-xl mobile:w-full laptop:w-4/6;
 }
 .content {
   @apply w-full mx-auto container;
 }
 .bg-custom {
-  @apply bg-cover bg-center;
+  @apply bg-cover bg-center z-0;
   background-image: url("@/assets/img/banner.jpg");
+  filter: blur(2px);
 }
 .img-1 {
   @apply w-9/12 h-96 flex justify-center items-center;
@@ -646,24 +648,24 @@ input[type="date"]:valid {
   background-image: url("@/assets/img/labor.jpg");
   @apply bg-cover bg-center rounded;
   height: 300px;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(2px);
 }
 .bg-custom-2 {
   background-image: url("@/assets/img/insurance.jpg");
   @apply bg-cover bg-center rounded;
   height: 300px;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(2px);
 }
 .bg-custom-3 {
   background-image: url("@/assets/img/health.jpg");
   @apply bg-cover bg-center rounded;
   height: 300px;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(2px);
 }
 .bg-custom-4 {
   background-image: url("@/assets/img/protection.jpg");
   @apply bg-cover bg-center rounded;
   height: 300px;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(2px);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-nav">
-    <div class="nav">
+    <div class="nav z-10">
       <div class="w-2/6">
         <NuxtLink to="/">
           <div class="w-10/12">
@@ -16,7 +16,7 @@
 
           <div
             class="
-              z-40
+              z-10
               hidden
               w-40
               bg-white
@@ -89,6 +89,7 @@
               dark:bg-gray-700
               group-hover:block
               absolute
+              z-10
             "
           >
             <ul
@@ -138,6 +139,7 @@
               dark:bg-gray-700
               group-hover:block
               absolute
+              z-10
             "
           >
             <ul
